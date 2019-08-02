@@ -1,0 +1,155 @@
+/**
+    * login.scss
+    * @description: Estilos del login
+    * @author: Katherine Felix 
+**/
+
+.login {
+
+    height: 100vh;
+    background-color: $white;
+
+    .right, .left  {
+        height: 100vh;
+    }
+
+    .left {
+        background-size: cover;
+        background-position: top;
+        width: 50%;
+
+        .logo {
+            width: 60%;
+        }
+    }
+    
+    .right {
+        width: 50%;
+        background-color: $white;
+
+        .btn-back {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 350ms ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+                color: $lightBlue;
+            }
+        }
+
+        .logo-mobile {
+            display: none;
+        }
+
+        .form-data {
+            width: 90%;
+            padding: 0 $paddingExtra ;
+
+            .title {
+                transform: scaleX(1.02);
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .login {
+        .left {
+            width: 40%
+        }
+    
+        .right {
+            width: 60%;
+    
+            .form-data {
+                width: 90%;
+                padding: 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+.login {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        background-color: $white;
+
+        h1 {
+            font-size: $fontHuge;
+        }
+
+        .logo-mobile {
+            display: flex;
+            margin-bottom: 24px;
+            width: 65%;
+        }
+
+        .form-data {
+            width: 90%;
+            padding: 0;
+             .title {
+                transform: scaleX(1.02);
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+.login {
+    .right {
+    .form-data {
+        width: 90%;
+        padding: 0;
+         .title {
+            transform: scaleX(1.02);
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    }
+}
+}
+
+@media screen and (max-width: 380px) {
+    .login {
+        .right {
+        .logo-mobile {
+            display: none;
+        }
+        .form-data {
+            width: 90%;
+            padding: 0;
+             .title {
+                transform: scaleX(1.02);
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        }
+    }
+    }

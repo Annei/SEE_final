@@ -1,0 +1,128 @@
+/**
+    * kardex.scss
+    * @description: Estilos del kardex
+    * @author: Jazmin Pool
+**/
+
+.kardex{
+
+
+    table {
+
+        .first-header {
+            height: 20px;
+            th {
+                padding: 2px;
+            }
+        }
+        thead {
+            tr{
+                height: 40px;
+            }
+        }
+        tr{
+            height: 35px;
+        }
+
+        thead tr th {
+            color: #fff;
+            text-align: center;
+            padding: 8px 4px 8px 4px;
+        }
+
+        td{
+            text-transform: uppercase;
+            padding: 8px;
+            text-align: center;
+            font-weight: $weightLight;
+            font-size: $fontTiny;
+        }
+        
+        tbody tr td{
+            border-right: 1px solid $border; //Si se necesita el borde derecho, es esa linea
+            &:last-child{ border: 0; }
+        }
+    
+        tbody tr{
+            border-bottom: 1px solid $border;
+            
+            &:last-child{ border: 0; }
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+.kardex {
+    .container-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+
+        .card-margin {
+            margin-right: 16px;
+        }
+    }
+
+    table {
+        thead tr th {
+            &:nth-child(2) {
+                padding: 8px 90px;
+            }
+        
+            &:nth-child(6) {
+                padding: 8px 32px;
+            }
+
+            &:nth-child(8) {
+                padding: 8px 32px;
+            }
+       
+        }
+
+        td {
+            padding: 0 2px;
+        }
+    }
+}
+    
+}
+
+@media screen and (max-width: 768px) {
+
+.kardex {
+    .container-cards {
+        flex-direction: column;
+
+        .card-margin {
+            margin-right: 0px;
+        }
+    }
+
+    table {
+        thead tr th {
+            &:nth-child(2) {
+                padding: 8px 90px;
+            }
+        
+            &:nth-child(6) {
+                padding: 8px 32px;
+            }
+
+        
+            
+        }
+
+        td {
+            padding: 0 2px;
+        }
+    }
+}
+    
+}

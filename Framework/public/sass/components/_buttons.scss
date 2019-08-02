@@ -1,0 +1,70 @@
+/**
+*   buttons.scss
+*   @description: Estilos unicamente para botones
+*/
+
+button {
+    font-family: $Heebo;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: $Heebo;
+    padding: $paddingNormal $paddingMedium;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-general-data {
+    padding: 5px $paddingLarge;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: $darkBlue;
+    color: $white;
+    transition: background .300s ease-in-out;
+
+    .icon-btn {
+        margin-right: $marginNormal;
+    }
+
+    &:hover {
+        background: $lightBlue;
+    }
+}
+
+.btn-admin {
+    padding: 5px $paddingLarge;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: $darkBlue;
+    color: $white;
+    transition: background .300s ease-in-out;
+
+    .icon-btn {
+        margin-right: $marginNormal;
+    }
+
+    &:hover {
+        background: $lightBlue;
+    }
+}
+
+.btn-form-admin {
+    padding: 4px 16px;
+    font-size: .9rem;
+    transition: background-color .300s ease-in-out;
+    &:hover {
+        background-color: $lightBlue;
+    }
+}
+
+.btn-login {
+    padding: 6px $paddingLarge;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: $darkBlue;
+    border-radius: 4px;
+    color: $white;
+    transition: background .300s ease-in-out;
+
+    &:hover {
+        background: $lightBlue;
+        
+    }
+}

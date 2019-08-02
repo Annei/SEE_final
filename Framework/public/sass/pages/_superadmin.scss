@@ -1,0 +1,36 @@
+ /**
+    * superadmin.scss
+    * @description: Estilos de la página del superadministrador
+**/
+
+ .container-form {
+     background-color: $white;
+     padding: $paddingSemi $paddingLarge;
+     -webkit-box-shadow: 4px 5px 30px -12px rgba(140, 140, 140, 0.93);
+     -moz-box-shadow: 4px 5px 30px -12px rgba(140, 140, 140, 0.93);
+     box-shadow: 4px 5px 30px -12px rgba(140, 140, 140, 0.93);
+
+     .superadmin-input {
+         padding: $paddingSemi;
+         text-align: center;
+         
+         h4{
+             color: #2C54B3;
+         }
+
+         .input {
+             color: #2C54B3;
+             text-align: center;
+         }
+
+         .input::placeholder {
+             color: #b4b4b4;
+         }
+     }
+ }
+
+ @media screen and (min-width: 1440px) {}
+
+ @media screen and (max-width: 992px) {}
+
+ @media screen and (max-width: 768px) {}

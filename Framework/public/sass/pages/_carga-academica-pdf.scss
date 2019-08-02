@@ -1,0 +1,51 @@
+
+
+
+.carga-academica-pdf{
+
+    thead tr th {
+        border: 1px solid $black;
+        text-align: center;
+        padding: $paddingNormal $paddingLarge;
+
+        &:first-child{
+            padding: 8px 16px;
+        }
+
+        &:nth-child(3) {
+            padding: 8px 16px;
+        }
+
+        &:nth-child(7) {
+            padding: 8px 24px;
+        }
+    }
+
+    tbody tr td {
+        color: $black;
+        border: 1px solid $black;
+        font-size: .8rem;
+        padding: 4px 3px 4px 3px;
+
+        &:last-child {
+            border: 1px solid $black;
+        }
+        &:nth-child(4) {
+            font-size: .7rem;
+        }
+    }
+    
+    .table-datos-alumno {
+        tr th {
+            border: 1px solid $black;
+            font-size: .9rem;
+            padding-left: 16px;
+        }
+        td {
+            padding-left: 16px;
+        }
+    }
+    
+    
+  
+}
